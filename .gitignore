@@ -1,0 +1,7 @@
+/src/main/main.iml
+/.idea/
+/target/
+/seleniumAutomationExample.iml
+/systemtest.log
+/logs/
+/src/test/test.iml
