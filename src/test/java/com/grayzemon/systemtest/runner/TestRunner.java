@@ -16,7 +16,7 @@ import java.util.Calendar;
 @CucumberOptions(
         features = {"classpath:features"},
         glue = {"com.grayzemon.systemtest.steps","com.grayzemon.systemtest.hooks"},
-        tags={"@loginTestFeature"} ,
+        tags={"@loginValidationFeature"} ,
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:"})
 
 public class TestRunner {
@@ -26,7 +26,7 @@ public class TestRunner {
         final String userPath = System.getProperty("user.dir");
         final String reporterPath = userPath + "\\target/report/";
         final String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-        final String pathname = reporterPath + "Interviewee Automation Report " + timeStamp + ".html";
+        final String pathname = reporterPath + "Website Automation Report " + timeStamp + ".html";
         ExtentProperties extentProperties = ExtentProperties.INSTANCE;
         extentProperties.setReportPath(pathname);
     }

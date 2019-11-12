@@ -10,12 +10,12 @@ import java.io.IOException;
 public class AfterHooks {
 
     @After()
-    public void afterRunningScenario(Scenario scenario) throws IOException {
-        Screenshot.takeScreenshotAfterEveryScenario(scenario);
+    public void afterRunningScenario(Scenario scenario)  {
+        //Screenshot.takeScreenshotAfterEveryScenario(scenario);
     }
 
     @After(order = 100)
-    public void afterRunningScenario3(Scenario scenario) {
+    public void afterRunningScenario3() {
         DriverUtils.closeDriver();
     }
 

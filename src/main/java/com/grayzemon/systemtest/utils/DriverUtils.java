@@ -86,6 +86,7 @@ public class DriverUtils {
         if (isDriverPresent()) {
             webdriver.unregister(webDriverEventHandler);
             webdriver.quit ();
+            webdriver = null;
             log.info ("Closing the driver instance");
         }
     }

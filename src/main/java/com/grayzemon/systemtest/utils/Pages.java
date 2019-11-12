@@ -5,13 +5,13 @@ import com.grayzemon.systemtest.utils.pages.LandingPage;
 import com.grayzemon.systemtest.utils.pages.LoginPage;
 
 
-public class TestContext {
+public class Pages {
 
     private LandingPage landingPage;
     private HomePage homePage;
     private LoginPage loginPage;
 
-    public TestContext() {
+    public Pages() {
         landingPage = new LandingPage();
         homePage = new HomePage();
         loginPage = new LoginPage();
