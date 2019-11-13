@@ -42,9 +42,9 @@
         <fileSet>
             <directory>src/test/resources/drivers</directory>
             <outputDirectory>src/test/resources/drivers</outputDirectory>
-            <includes>
-                <include>**/*.exe</include>
-            </includes>
+            <excludes>
+                <exclude>**/*.exe</exclude>
+            </excludes>
             <useDefaultExcludes>true</useDefaultExcludes>
         </fileSet>
     </fileSets>

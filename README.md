@@ -2,14 +2,14 @@
 
 **Requirements**
 
-Google chrome browser updated to latest version
+Google chrome browser.
 
 Java Develeopment Kit (JDK) v1.8 or higher.  Note the JRE 1.8 maybe used instead if running a precompiled jar file, 
 however an alternative unzip utility will be required to replace using jar to unzip the /src folder (see below) 
 
 Apache Maven (or and IDE such as Intelij or Eclipse) 
 
-_Running via maven_
+**Running via maven**
 
 `mvn clean compile test "-Dcucumber.options=-t @loginValidationFeature"`
 

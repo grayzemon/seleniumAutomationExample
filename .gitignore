@@ -5,3 +5,6 @@
 /systemtest.log
 /logs/
 /src/test/test.iml
+/src/test/resources/drivers/chromedriver/*/*/chromedriver.exe
+/settings.xml
+/mavenrepo/

@@ -5,7 +5,7 @@ import static com.grayzemon.systemtest.utils.LoggingFactory.log;
 public class TestMain {
 
     public static void main(String[] args) throws Throwable {
-        String tags = "@loginTestFeature";
+        String tags = "@loginValidationFeature";
 
         if (args.length == 1) {
             tags = args[0];
