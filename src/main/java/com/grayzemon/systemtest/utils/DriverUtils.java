@@ -39,6 +39,7 @@ public class DriverUtils {
             log.warn("Chrome Driver not available at " + driverPath);
             log.warn("Initializing Chrome Driver through 'WebDriverManager'");
             WebDriverManager.globalConfig().setTargetPath(DRIVER_BASE_PATH);
+            WebDriverManager.chromedriver().clearPreferences();
             WebDriverManager.chromedriver().setup();
             log.info("Driver path: " + WebDriverManager.chromedriver().getBinaryPath());
         }

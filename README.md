@@ -13,11 +13,17 @@ Apache Maven (or and IDE such as Intelij or Eclipse)
 
 `mvn clean compile test "-Dcucumber.options=-t @loginValidationFeature"`
 
+**Running via the TestRunner**
 
+Create a JUnit run configuration using the class com.grayzemon.systemtest.runner.TestRunner
+
+**Running via an application Main class**
+
+Create an application configuration with the Main class set to com.grayzemon.systemtest.TestMain
 
 **Compiling and running from a jar file**
 
-`mvn generate-sources compile -DskipTests package`
+`mvn compile -DskipTests package`
 
  Extract files from the jar file: `jar -xf ServiceTestAutomation-1.0-SNAPSHOT-jar-with-dependencies.jar src`
  
